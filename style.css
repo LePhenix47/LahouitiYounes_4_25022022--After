@@ -1055,3 +1055,8 @@ font-size: 16px;
 .bg-cranberry{
     background-color: #C54836;
 }
+
+
+#white-text-ft a{
+    color: white !important;
+}
