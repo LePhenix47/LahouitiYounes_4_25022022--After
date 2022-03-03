@@ -29,7 +29,8 @@ menu,
 nav,
 section,
 summary {
-    display: block
+    display: block;
+    font-size: 16px;
 }
 
 audio,
