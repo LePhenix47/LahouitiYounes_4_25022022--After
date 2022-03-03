@@ -781,12 +781,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #C54836;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #a93e2e!important;
     color: #FFFFFF!important;
 }
 
@@ -1045,4 +1045,13 @@ h4 {
         margin-left: 25px;
 font-size: 16px;
     }
+}
+
+
+.bg-pansy{
+    background-color: #93669D;
+}
+
+.bg-cranberry{
+    background-color: #C54836;
 }
