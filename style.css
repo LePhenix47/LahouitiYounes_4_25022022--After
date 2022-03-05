@@ -1073,3 +1073,8 @@ a:focus-visible{
 a:focus{
     outline: 2px dashed cornflowerblue;
 }
+
+#bg-white{
+color: white !important;
+z-index: 999999;
+}
