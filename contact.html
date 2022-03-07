@@ -73,105 +73,121 @@
         </div>
       </header>
 
-      <!-- bloc-6 -->
-      <div
-        class="bloc bg-contact bg-repeat d-bloc bloc-bg-texture texture-paper"
-        id="bloc-6"
-      >
-        <div class="container bloc-lg">
-          <div class="row">
-            <div class="col-sm-12"></div>
+      <main>
+        <!-- bloc-6 -->
+        <div
+          class="bloc bg-contact bg-repeat d-bloc bloc-bg-texture texture-paper"
+          id="bloc-6"
+        >
+          <div class="container bloc-lg">
+            <div class="row">
+              <div class="col-sm-12"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- bloc-6 END -->
+        <!-- bloc-6 END -->
 
-      <!-- bloc-7 -->
-      <div class="bloc bgc-white l-bloc" id="bloc-7">
-        <h1 class="text-center hero-bloc-text">Parlons web design !</h1>
-        <p class="text-center mg-lg tight-width-whitespace">
-          Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br />
-          Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-        </p>
+        <!-- bloc-7 -->
+        <div class="bloc bgc-white l-bloc" id="bloc-7">
+          <h1 class="text-center hero-bloc-text">Parlons web design !</h1>
+          <p class="text-center mg-lg tight-width-whitespace">
+            Nous sommes ravis que vous souhaitiez collaborer avec notre
+            agence.<br />
+            Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+          </p>
 
-        <div class="container bloc-lg">
-          <div class="row">
-            <div class="col-sm-6">
-              <!--Form-->
-              <fieldset>
-                <legend>Formulaire de contact</legend>
-                <form
-                  id="form_1"
-                  novalidate
-                  success-msg="Your message has been sent."
-                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-                  method="post"
-                  action="form_1.php"
-                >
-                  <div class="form-group">
-                    <label> Nom </label>
-                    <input id="name" class="form-control" required autofocus />
-                  </div>
-                  <div class="form-group">
-                    <label> Adresse email </label>
-                    <input
-                      id="email"
-                      class="form-control"
-                      type="email"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label> Comment nous avez-vous connu ? </label>
-                    <input
-                      class="form-control"
-                      type="email"
-                      required
-                      autofocus
-                      id="input_504"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>
-                      Brief de votre projet (Ajoutez autant de détails que
-                      nécessaire)<br /> </label
-                    ><textarea
-                      id="message"
-                      class="form-control"
-                      rows="4"
-                      cols="50"
-                      role="textbox"
-                      required
-                      autofocus
-                    ></textarea>
-                  </div>
-                  <button
-                    class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                    type="submit"
+          <section role="region" class="container bloc-lg" aria-label="Formulaire">
+            <div class="row">
+              <div class="col-sm-6">
+                <!--Form-->
+                <fieldset>
+                  <legend>Formulaire de contact</legend>
+                  <form
+                    id="form_1"
+                    novalidate
+                    success-msg="Your message has been sent."
+                    fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+                    method="post"
+                    action="form_1.php"
                   >
-                    Envoyer
-                  </button>
-                </form>
-              </fieldset>
+                    <div class="form-group">
+                      <label> Nom </label>
+                      <input
+                        id="name"
+                        class="form-control"
+                        aria-labelledby="name"
+                        required
+                        autofocus
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label> Adresse email </label>
+                      <input
+                        id="email"
+                        class="form-control"
+                        aria-labelledby="email"
+                        type="email"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label> Comment nous avez-vous connu ? </label>
+                      <input
+                      id="text"
+                        class="form-control"
+                        type="text"
+                        class="email"
+                        aria-labelledby="text"
+                        required
+                        autofocus
+                        id="input_504"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label>
+                        Brief de votre projet (Ajoutez autant de détails que
+                        nécessaire)<br /> </label
+                      ><textarea
+                        id="message"
+                        class="form-control"
+                        aria-labelledby="message"
+                        rows="4"
+                        cols="50"
+                        role="textbox"
+                        required
+                        autofocus
+                      ></textarea>
+                    </div>
+                    <button
+                      class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+                      type="submit"
+                    >
+                      Envoyer
+                    </button>
+                  </form>
+                </fieldset>
 
-              <!--Fin du form-->
+                <!--Fin du form-->
+              </div>
+              <div class="col-sm-6">
+                <p>
+                  contact@agencelapanthere.com<br />2 place Sathonay 69001
+                  Lyon<br />Ouvert de 9h à 18h, du lundi au vendredi<br />
+                </p>
+              </div>
             </div>
-            <div class="col-sm-6">
-              <p>
-                contact@agencelapanthere.com<br />2 place Sathonay 69001 Lyon<br />Ouvert
-                de 9h à 18h, du lundi au vendredi<br />
-              </p>
-            </div>
-          </div>
+          </section>
         </div>
-      </div>
-      <!-- bloc-7 END -->
+        <!-- bloc-7 END -->
 
-      <!-- ScrollToTop Button -->
-      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
-        ><span class="fa fa-chevron-up"></span
-      ></a>
-      <!-- ScrollToTop Button END-->
+        <!-- ScrollToTop Button -->
+        <a
+          class="bloc-button btn btn-d scrollToTop"
+          onclick="scrollToTarget('1')"
+          ><span class="fa fa-chevron-up"></span
+        ></a>
+        <!-- ScrollToTop Button END-->
+      </main>
 
       <!-- Footer - bloc-8 -->
       <footer class="bloc bg-pansy d-bloc" id="bloc-8" role="contentinfo">
