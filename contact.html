@@ -96,7 +96,11 @@
             Parlez-nous de votre projet en complétant le formulaire ci-dessous.
           </p>
 
-          <section role="region" class="container bloc-lg" aria-label="Formulaire">
+          <section
+            role="region"
+            class="container bloc-lg"
+            aria-label="Formulaire"
+          >
             <div class="row">
               <div class="col-sm-6">
                 <!--Form-->
@@ -111,7 +115,7 @@
                     action="form_1.php"
                   >
                     <div class="form-group">
-                      <label> Nom </label>
+                      <label> Nom de famille<span>*</span></label>
                       <input
                         id="name"
                         class="form-control"
@@ -121,7 +125,7 @@
                       />
                     </div>
                     <div class="form-group">
-                      <label> Adresse email </label>
+                      <label> Adresse email<span>*</span></label>
                       <input
                         id="email"
                         class="form-control"
@@ -131,13 +135,13 @@
                       />
                     </div>
                     <div class="form-group">
-                      <label> Comment nous avez-vous connu ? </label>
+                      <label> Numéro de téléphone</label>
                       <input
-                      id="text"
+                        id="phone"
                         class="form-control"
-                        type="text"
-                        class="email"
-                        aria-labelledby="text"
+                        type="tel"
+                        class="tel"
+                        aria-labelledby="tel"
                         required
                         autofocus
                         id="input_504"
@@ -146,7 +150,7 @@
                     <div class="form-group">
                       <label>
                         Brief de votre projet (Ajoutez autant de détails que
-                        nécessaire)<br /> </label
+                        nécessaire)<span>*</span> </label
                       ><textarea
                         id="message"
                         class="form-control"
@@ -165,6 +169,10 @@
                       Envoyer
                     </button>
                   </form>
+                  <p>
+                    Les champs marqués avec un astérisque (<span>*</span>) doivent être
+                    remplis
+                  </p>
                 </fieldset>
 
                 <!--Fin du form-->
