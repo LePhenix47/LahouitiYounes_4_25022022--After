@@ -26,11 +26,8 @@
     <script src="./js/gmaps.js"></script>
 
     <title>Page de contact</title>
-
-    <!-- Analytics -->
-
-    <!-- Analytics END -->
   </head>
+
   <body>
     <!-- Principal conteneur -->
     <div class="page-container">
@@ -43,7 +40,7 @@
                 ><img
                   src="img/agence-la-panthere-monochrome.svg"
                   alt="image du logo entier de l'agence 'la Panthère, Agence web design'"
-                  title="Agence la Panthère, fiable comme jamais!"
+                  title="Agence la Panthère, le design web fiable comme jamais!"
                   height="40"
               /></a>
 
@@ -62,11 +59,15 @@
               </button>
             </div>
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-              <a
-                href="index.html"
-                title="Redirigez-vous vers la page d'accueil"
-                >Accueil</a
-              >
+              <ul class="site-navigation nav navbar-nav" role="list">
+                <li>
+                  <a
+                    href="index.html"
+                    title="Voulez-vous nous communiquer quelquechose"
+                    >Accueil</a
+                  >
+                </li>
+              </ul>
             </div>
           </nav>
         </div>
@@ -107,7 +108,7 @@
                   <legend>Formulaire de contact</legend>
                   <form
                     id="form_1"
-                    novalidate
+                    validate
                    
                     action="form_1.php"
                   >
@@ -126,8 +127,8 @@
                       <input
                         id="email"
                         class="form-control"
-                        aria-labelledby="email"
                         type="email"
+                        aria-labelledby="email"                        
                         required
                       />
                     </div>
@@ -138,7 +139,6 @@
                         class="form-control"
                         type="tel"
                         aria-labelledby="phone"
-                        required
                         id="input_504"
                       />
                     </div>
@@ -150,10 +150,11 @@
                         id="message"
                         class="form-control"
                         aria-labelledby="message"
+                        required
                         rows="4"
                         cols="50"
                         role="textbox"
-                        required
+                        
                       ></textarea>
                     </div>
                     <button
@@ -172,10 +173,7 @@
                 <!--Fin du form-->
               </div>
               <div class="col-sm-6">
-                <p>
-                  contact@agencelapanthere.com<br />2 place Sathonay 69001
-                  Lyon<br />Ouvert de 9h à 18h, du lundi au vendredi<br />
-                </p>
+              <img src="img/agence-la-panthere-monochrome.svg" alt="Logo entier de l'agence web 'Agence La Panthère">
               </div>
             </div>
           </section>
@@ -192,46 +190,54 @@
       </main>
 
       <!-- Footer - bloc-8 -->
-      <footer class="bloc bg-pansy d-bloc" id="bloc-8" role="contentinfo">
+       <footer class="bloc bg-pansy d-bloc" id="bloc-8" role="contentinfo">
         <div class="container bloc-sm">
           <div class="row" id="white-text-ft">
             <div class="col-sm-12">
               <p class="text-center white">
-                Agence La Panthère - Agence web basée à Lyon.<br />
-                <a
-                  href="mailto:contact@agencelapanthere.com"
-                  target="_blank"
-                  >Contactez-nous par mail</a
-                >
-                <br />
-                2 place Sathonay 69001 Lyon <br />
-                Ouvert du lundi au vendredi, de 9h à 18h
+                Agence La Panthère - Agence web basée à 2 place Sathonay 69001
+                Lyon.<br />
+                contact@agencelapanthere.com <br />
+
+                Ouvert de 9h à 18h, du lundi au vendredi
               </p>
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a
+                      class="social"
+                      href="#"
+                      title="Contactez-nous sur notre compte Twitter!"
                       ><span class="fa fa-twitter icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a
+                      class="social"
+                      href="#"
+                      title="Contactez-nous sur notre compte Facebook!"
                       ><span class="fa fa-facebook icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a
+                      class="social"
+                      href="#"
+                      title="Contactez-nous sur notre compte Dribbble!"
                       ><span class="fa fa-dribbble icon-md"></span
                     ></a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="index.html"
+                    <a
+                      class="social"
+                      href="#"
+                      title="Contactez-nous sur notre compte Instagram!"
                       ><span class="fa fa-instagram icon-md"></span
                     ></a>
                   </div>
@@ -243,29 +249,50 @@
                   <ul role="list">
                     <li>
                       <a
-                        href="voiture.com"
+                        href="#"
                         title="Redirigez-vous vers le site voiture.com"
                         >Comment faire une bon site web d'entreprise?</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="pizza.com"
-                        title="Redirigez-vous vers le site pizza.com"
+                      <a href="#" title="Redirigez-vous vers le site pizza.com"
                         >Quelles sont les techniques d'optimisation SEO pour le
                         web?</a
                       >
                     </li>
                     <li>
-                      <a
-                        href="matoiture.com"
-                        title="Redirigez-vous vers le site booki.com"
+                      <a href="#" title="Redirigez-vous vers le site booki.com"
                         >Quels sont les meilleurs IDEs pour le développement?</a
                       >
                     </li>
                   </ul>
                 </div>
-                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                  Nos services
+                  <ul role="list">
+                    <li>
+                      <a href="#"> Jobs </a>
+                    </li>
+                    <li>
+                      <a href="#"> Carrières </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="col-sm-4">
+                  Fonctionnement
+                  <ul role="list">
+                    <li>
+                      <a href="#"> Nos développeurs </a>
+                    </li>
+                    <li>
+                      <a href="#"> Documentation </a>
+                    </li>
+                    <li>
+                      <a href="#"> Support </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
