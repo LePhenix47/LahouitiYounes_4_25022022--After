@@ -9,15 +9,18 @@ A LOT of changes were made, here are the most important ones:
 I found :
 9 accessibility issues related to the technical optimization of the site
 7 SEO issues related to on-page SEO and technical structure
+I found :
+9 accessibility concerns related to the technical optimization of the site
+7 SEO concerns related to on-page SEO and technical structure
 
 A) Accessibility
 1. Use of image for text
-For the perceptibility of the site, it is important to avoid putting images for the text because: it makes the site slower to load, it cannot be selected, making the selection of the text as well as the translation impossible. And it's flagged as a "Blackhat" technique by Google.
-Moreover these images have a bad use of the "class" attribute and supposed to be used to change the style of the element
+For the perceptibility of the site, it is important to avoid putting images for the text because: it makes the site slower to load, it cannot be selected, making the overflight of the text as well as the translation impossible. And it's flagged as a "Blackhat" technique by Google.
+Moreover these images have a bad use of the "class" attribute and supposed to be used to change the style of the element with this class
 
-It is imperative to use block semantic tags for the text (`<p>, <q> or <blockquote>…
-`)
-I replaced the <img/> tags with a <blockquote> as well as a link to the article of the client who posted the opinion or an <h2> with the text of the image
+It is imperative to use block tags for the text (p, q or blockquote…)
+
+I replaced the img tags with a blockquote as well as a link to the article of the client who posted the opinion or an h2 with the text of the image
 
 Sources:
 WCAG 1.4.5
@@ -25,7 +28,7 @@ WCAG 1.4.5
  
 
 2.Responsive design
-The responsive design has flaws in mobile, there is the text image which is truncated or which does not fill the whole container and finally there are the lists which are a little truncated in the footer. What harms UX and impacts accessibility, here is a screenshot of the problem
+The responsive design has flaws in mobile mode, there is the text image which is truncated or which does not fill the whole container and finally there are the lists which are a little truncated in the footer. What harms UX and impacts accessibility, here is a screenshot of the problem
 
 Always code your site on mobile first because 58% of Google users are on mobile, and designing for tablets, laptops and desktops becomes easier
 
@@ -34,11 +37,11 @@ Source: WCAG 5.2.2 and Google
 
 
 3. Lack of ARIA attributes in tags
-There are a lot of missing ARIA 'role', 'aria-label' or 'aria-labelledby' (careful because aria-labelledby works like a <label for="..">) tags in the HTML code of the site
+There are a lot of missing ARIA 'role', 'aria-label' or 'aria-labelledby' tags in the HTML code of the site
 People using the alternative display will not be able to find their way around the page correctly
 
 These tags must be added because there are tags to which there are no default attributes to add HTML, a title attribute or an alternative textual description
-I added a role to all semantic tags like <main>, <ul>, <nav>, <footer>… as well as an aria-label=''region'' for sections and an aria-labelledby in buttons as well as in forms
+I added a role to all semantic tags like main, ul, nav, footer… as well as an aria-label=''region'' for sections and an aria-labelledby in buttons as well as in forms
 
 Source: WCAG 2.4.6
 
