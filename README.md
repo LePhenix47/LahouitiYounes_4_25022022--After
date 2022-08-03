@@ -15,8 +15,8 @@ A) Accessibility
 For the perceptibility of the site, it is important to avoid putting images for the text because: it makes the site slower to load, it cannot be selected, making the selection of the text as well as the translation impossible. And it's flagged as a "Blackhat" technique by Google.
 Moreover these images have a bad use of the "class" attribute and supposed to be used to change the style of the element
 
-It is imperative to use block semantic tags for the text (<p>, <q> or <blockquote>…)
-
+It is imperative to use block semantic tags for the text (`<p>, <q> or <blockquote>…
+`)
 I replaced the <img/> tags with a <blockquote> as well as a link to the article of the client who posted the opinion or an <h2> with the text of the image
 
 Sources:
